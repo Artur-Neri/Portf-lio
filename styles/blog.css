@@ -8,6 +8,7 @@ body {
     font-size: 1.4375rem;
     font-family: 'Space Mono', sans-serif;
     overflow-x: hidden;
+    margin: 0px 18px 0 18px;
 }
 
 h2 {
@@ -23,7 +24,9 @@ h3 {
 }
 
 .container{
-    margin: 0px 18px 0 18px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 910px;
 }
 
 /* Helper */
