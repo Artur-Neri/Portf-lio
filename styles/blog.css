@@ -1,0 +1,169 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.4375rem;
+    font-family: 'Space Mono', sans-serif;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.container{
+    margin: 0px 18px 0 18px;
+}
+
+/* Helper */
+
+.show {
+    display: block !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.selected {
+    filter: brightness(100%) !important;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: start;
+}
+
+.navbar {
+    display: flex;
+    padding: 18px;
+}
+
+.floating-menu {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: white;
+    display: none;
+}
+
+.floating-menu::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #00000055;
+}
+
+.floating-menu li {
+    margin-bottom: 15px;
+}
+
+
+.floating-menu a {
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar .logo {
+    font-size: 1.25rem;
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    right: 0;
+    text-align: center;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.hamburguer-menu {
+    z-index: 3;
+    cursor: pointer;
+}
+
+.filters {
+    font-size: 1rem;
+}
+
+.filters li{
+    text-align: center;
+    padding: 5px;
+    flex-grow: 1;
+    color: white;
+    filter: brightness(80%);
+}
+
+.posts{
+    margin-top: 10px;
+}
+
+.post {
+    max-width: 100vw;
+    margin-bottom: 20px;
+}
+
+.post img{
+    width: 100%;
+}
+
+.tag-ptp {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: #E97777;
+    border-radius: 2px;
+}
+.tag-cc {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: #7286D3;
+    border-radius: 2px;
+}
+
+.tag-events {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: #804674;
+    border-radius: 2px;
+}
+
+.tag-classes {
+    font-size: 0.75rem;
+    text-align: center;
+    padding: 5px;
+    color: white;
+    background-color: #FAAB78;
+    border-radius: 2px;
+}
+
+.date {
+    font-size: 0.75rem;
+}

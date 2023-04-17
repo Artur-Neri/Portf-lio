@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/182cdb7d61.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/portfolio.css">
+    <link rel="stylesheet" href="styles/blog.css">
     <title>Artur Neri</title>
 </head>
 <body>
@@ -28,6 +28,73 @@
             <h1 class="logo"><a href="index.html">Blog | Artur Neri</a></h1>
         </nav>
     </header>
-    <script src="app/main.js"></script>
+    <main class="container">
+        <h2>Categorias</h2>
+        <ul class="filters" id="filters">
+            <li style="background-color: #afafaf; margin-bottom: 5px;" class="selected" data-filter="all">Todos</li>
+            <li style="background-color: #E97777" data-filter="ptp" class="selected">Por trás dos projetos</li>
+            <div class="flex" id="filters2">
+                <li style="background-color: #7286D3;" data-filter="cc" class="selected">Ciência da Computação</li>
+                <li style="background-color: #804674;" data-filter="events" class="selected">Eventos</li>
+                <li style="background-color: #FAAB78;" data-filter="classes" class="selected">Aulas</li>
+            </div>
+        </ul>
+        <section class="posts">
+            <h2>Posts</h2>
+            <div id="posts">
+
+            <!-- Por trás do projeto -->
+            <figure class="post ptp" id="ptp">
+                <img src="images/latteshelp-post.jpg" alt="lattes help">
+                <figcaption>
+                    <ul class="flex">
+                        <li class="tag-ptp" id="tag-ptp">Por trás dos projetos</li>
+                        <li class="date">17/04/2023</li>
+                    </ul>
+                    <h3>Lattes Help</h3>
+                </figcaption>
+            
+            </figure>
+
+            <!-- Ciência da Computação -->
+            <figure class="post cc" id="cc">
+                <img src="images/algebra-booleana-post.jpg" alt="lattes help">
+                <figcaption>
+                    <ul class="flex">
+                        <li class="tag-cc" id="tag-cc">Ciência da Computação</li>
+                        <li class="date">12/04/2023</li>
+                    </ul>
+                    <h3>Álgebra de Boole</h3>
+                </figcaption>
+            </figure>
+
+            <!-- Eventos -->
+            <figure class="post events" id="events">
+                <img src="images/open-source-post.jpg" alt="lattes help">
+                <figcaption>
+                    <ul class="flex">
+                        <li class="tag-events" id="tag-events">Eventos</li>
+                        <li class="date">17/04/2023</li>
+                    </ul>
+                    <h3>Flisol e códigos Open Source</h3>
+                </figcaption>
+            </figure>
+
+            <!-- Aulas -->
+            <figure class="post classes" id="classes">
+                <img src="images/binarios-post.jpg" alt="lattes help">
+                <figcaption>
+                    <ul class="flex">
+                        <li class="tag-classes" id="tag-classes">Aulas</li>
+                        <li class="date">25/03/2023</li>
+                    </ul>
+                    <h3>Operações aritméticas com números binários</h3>
+                </figcaption>
+            </figure>
+            </figure>
+            </div>
+        </section>
+    </main>
+    <script src="app/blog.js"></script>
 </body>
 </html>
