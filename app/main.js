@@ -2,10 +2,12 @@
 const hamburguer = document.querySelector('.hamburguer-menu')
 const icone = document.querySelector('.icone')
 const menu = document.querySelector('.floating-menu')
+const body = document.querySelector('body')
 
 hamburguer.addEventListener('click', function() {
     icone.classList.toggle('fa-bars')
     icone.classList.toggle('fa-xmark')
+    body.classList.toggle('disable-scroll')
     menu.classList.toggle('show')
 })
 
