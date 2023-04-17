@@ -15,12 +15,21 @@ hamburguer.addEventListener('click', function() {
 const posts = document.querySelector('#posts')
 const filters1 = document.querySelector('#filters')
 const filters2 = document.querySelector('#filters2')
+const ptp = document.querySelector('#tag-ptp')
+const cc = document.querySelector('#tag-cc')
+const events = document.querySelector('#tag-events')
+const classes = document.querySelector('#tag-classes')
 const categories = []
 categories.push(filters1.children[0])
 categories.push(filters1.children[1])
 categories.push(filters2.children[0])
 categories.push(filters2.children[1])
 categories.push(filters2.children[2])
+// 
+categories.push(ptp)
+categories.push(cc)
+categories.push(events)
+categories.push(classes)
 
 categories.forEach(category => {
     category.addEventListener('click', function(){
@@ -34,7 +43,7 @@ categories.forEach(category => {
         } else if (category.dataset.filter==='ptp'){
             categories.forEach(item => {
                 item.classList.remove('selected')
-            category.classList.add('selected')
+            categories[1].classList.add('selected')
             for(let i = 0; i < posts.children.length; i++){
                 if(posts.children[i].classList.contains('ptp')){
                     posts.children[i].classList.remove('hidden') 
@@ -46,7 +55,7 @@ categories.forEach(category => {
         } else if (category.dataset.filter==='cc'){
             categories.forEach(item => {
                 item.classList.remove('selected')
-            category.classList.add('selected')
+                categories[2].classList.add('selected')
             for(let i = 0; i < posts.children.length; i++){
                 if(posts.children[i].classList.contains('cc')){
                     posts.children[i].classList.remove('hidden') 
@@ -58,7 +67,7 @@ categories.forEach(category => {
         } else if (category.dataset.filter==='events'){
             categories.forEach(item => {
                 item.classList.remove('selected')
-            category.classList.add('selected')
+                categories[3].classList.add('selected')
             for(let i = 0; i < posts.children.length; i++){
                 if(posts.children[i].classList.contains('events')){
                     posts.children[i].classList.remove('hidden') 
@@ -70,7 +79,7 @@ categories.forEach(category => {
         } else if (category.dataset.filter==='classes'){
             categories.forEach(item => {
                 item.classList.remove('selected')
-            category.classList.add('selected')
+                categories[4].classList.add('selected')
             for(let i = 0; i < posts.children.length; i++){
                 if(posts.children[i].classList.contains('classes')){
                     posts.children[i].classList.remove('hidden') 

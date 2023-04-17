@@ -31,12 +31,12 @@
     <main class="container">
         <h2>Categorias</h2>
         <ul class="filters" id="filters">
-            <li style="background-color: #afafaf; margin-bottom: 5px;" class="selected" data-filter="all">Todos</li>
-            <li style="background-color: #E97777" data-filter="ptp" class="selected">Por trás dos projetos</li>
+            <li style="background-color: #afafaf; margin-bottom: 5px;" class="filter selected" data-filter="all">Todos</li>
+            <li style="background-color: #E97777" data-filter="ptp" class="filter selected">Por trás dos projetos</li>
             <div class="flex" id="filters2">
-                <li style="background-color: #7286D3;" data-filter="cc" class="selected">Ciência da Computação</li>
-                <li style="background-color: #804674;" data-filter="events" class="selected">Eventos</li>
-                <li style="background-color: #FAAB78;" data-filter="classes" class="selected">Aulas</li>
+                <li style="background-color: #7286D3;" data-filter="cc" class="filter selected">Ciência da Computação</li>
+                <li style="background-color: #804674;" data-filter="events" class="filter selected">Eventos</li>
+                <li style="background-color: #FAAB78;" data-filter="classes" class="filter selected">Aulas</li>
             </div>
         </ul>
         <section class="posts">
@@ -48,7 +48,7 @@
                     <img src="images/latteshelp-post.jpg" alt="lattes help">
                     <figcaption>
                         <ul class="flex">
-                            <li class="tag-ptp" id="tag-ptp">Por trás dos projetos</li>
+                            <li class="tag-ptp tag" id="tag-ptp" data-filter="ptp">Por trás dos projetos</li>
                             <li class="date">17/04/2023</li>
                         </ul>
                         <h3>Lattes Help</h3>
@@ -61,7 +61,7 @@
                     <img src="images/algebra-booleana-post.jpg" alt="Ágebra booleana">
                     <figcaption>
                         <ul class="flex">
-                            <li class="tag-cc" id="tag-cc">Ciência da Computação</li>
+                            <li class="tag-cc tag" id="tag-cc" data-filter="cc">Ciência da Computação</li>
                             <li class="date">12/04/2023</li>
                         </ul>
                         <h3>Álgebra de Boole</h3>
@@ -73,7 +73,7 @@
                     <img src="images/open-source-post.jpg" alt="Open Source">
                     <figcaption>
                         <ul class="flex">
-                            <li class="tag-events" id="tag-events">Eventos</li>
+                            <li class="tag-events tag" id="tag-events" data-filter="events">Eventos</li>
                             <li class="date">17/04/2023</li>
                         </ul>
                         <h3>Flisol e códigos Open Source</h3>
@@ -85,7 +85,7 @@
                     <img src="images/binarios-post.jpg" alt="Binários">
                     <figcaption>
                         <ul class="flex">
-                            <li class="tag-classes" id="tag-classes">Aulas</li>
+                            <li class="tag-classes tag" id="tag-classes" data-filter="classes">Aulas</li>
                             <li class="date">25/03/2023</li>
                         </ul>
                         <h3>Operações aritméticas com números binários</h3>

@@ -68,9 +68,16 @@ h4 {
 }
 
 .floating-menu li {
-    margin-bottom: 15px;
+    width: 127px;
+    margin: 0 auto;
+    padding: 8px 0 8px 0;
+    transition: all 0.5s ease-in-out;
 }
 
+.floating-menu li:hover {
+    background-color: gray;
+    width: 50%;
+}
 
 .floating-menu a {
     text-decoration: none;
