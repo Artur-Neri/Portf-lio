@@ -1,2 +1,2 @@
 # Portf-lio
-html, css, js portfolio
+> Status: Em desenvolvimento
